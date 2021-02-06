@@ -81,7 +81,18 @@ profile-pic {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    foot-weight: 700;
-    border-top: solid rgb(89, 88, 88) 1px
+    font-weight: 700;
+    border-top: solid rgb(89, 88, 88) 1px;
     margin-top: 100px
+  }
+
+  @media screen and (min-width: 768px) {
+   nav {
+      width: 335px;
+   }
+
+   .section-1 {
+     diplay: flex
+     flex-direction: row-reverse;
+   }
   }
