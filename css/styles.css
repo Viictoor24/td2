@@ -1,7 +1,6 @@
-*{
- font-family: 'Open Sans', sans-serif;
- text-align: center;
- color:rgb(57, 57, 57);
+* {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
 }
 
 body {
@@ -22,7 +21,7 @@ img {
 }
 
 ul {
-  padding-left:0;
+  padding-left: 0;
 }
 
 .nav li,
@@ -30,7 +29,7 @@ h2 {
   list-style: none;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 15px
+  padding: 15px;
   font-size: 18px;
 }
 
@@ -43,11 +42,16 @@ h3 {
 }
 
 .top {
-  margin: 16px 0;
+    margin: 16px 0;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
 }
 
 a:hover {
@@ -55,7 +59,7 @@ a:hover {
   color: orange;
 }
 
-profile-pic {
+.profile-pic {
   padding-top: 50px;
 }
 
@@ -65,84 +69,85 @@ profile-pic {
 
 .portfolio-container {
   padding-top: 10%;
-  padding-bottom:10%;
+  padding-bottom: 10%;
 }
 
 #portfolio {
- padding: 40px;
+  padding: 40px;
 }
 
 .project {
   padding-bottom: 25px;
 }
 
-.Contact-info {
- font-weight: 700;
-  }
+.contact-info {
+  font-weight: 700;
+}
 
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: 700;
-    border-top: solid rgb(89, 88, 88) 1px;
-    margin-top: 100px
-  }
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 700;
+  border-top: solid rgb(89, 88, 88) 1px;
+  margin-top: 100px;
+}
 
 .nav-footer {
   display: none;
 }
 
-  @media screen and (min-width: 768px) {
-   nav {
-      width: 335px;
-      display: flex;
-      margin: auto;
-   }
+@media screen and (min-width: 768px) {
+  .nav {
+    width: 490px;
+    display: flex;
+    margin: auto;
+  }
 
-   .img {
-     transition-duration: 1;
-   }
-   .section-1 {
-     display: flex
-     flex-direction: row-reverse;
-     margin-top: 50px;
-   }
+  img {
+    transition-duration: .5s;
+  }
+
+  .section-1 {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+  }
 
   .profile-pic {
     padding-top: 0;
     width: 44%;
     height: 100%;
-   }
-
-   .bio {
-    width: 55%;
-    padding-right: 25px:
-    text-align:left;
-    margin-top: 0;
-    font-size: 1.25em;
-   }
-
-   .project {
-     float: left;
-     width: 45%;
-     margin: auto;
-   }
-
-   .project:nth-child(even) {
-     margin-right: 8%
   }
 
-.project img {
-  max-width: 100%
-}
+  .bio {
+    width: 55%;
+    padding-right: 25px;
+    text-align: left;
+    margin-top: 0;
+    font-size: 1.25em;
+  }
 
-  .Portfolio-text {
+  .project {
+    float: left;
+    width: 45%;
+    margin:auto;
+  }
+
+  .project:nth-child(even) {
+    margin-right: 7%;
+  }
+
+  .project img {
+    max-width: 108%;
+  }
+
+  .portolio-text {
     padding: 0 25px;
   }
 
   .contact-container {
-    max-width: 70%;
+    max-width: 75%;
     margin: auto;
   }
 
@@ -150,34 +155,36 @@ profile-pic {
     margin-bottom: 50px;
   }
 
-.top {
-  display: none;
- }
+  .top {
+    display: none;
+  }
 
- .nav-footer {
-   display: flex;
-   font-family: 'Open Sans' , sans-serif;
-   text-align: center;
-   color: rgb(57, 57, 57);
-   }
+  .nav-footer {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: rgb(57, 57, 57);
+  }
 
-   .nav-footer li {
-     list-style: none;
-     padding-left: 20px;
-   }
+  .nav-footer li {
+    list-style: none;
+    padding-left: 20px;
+  }
 
-   img:hover {
-     transform: scale(1.25);
-   }
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
-  @media screen and (min-width: 1024px) {
-    body {
-      padding-bottom: 0;
-    }
-  header {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 1024px) {
+  body {
+    padding-bottom: 0;
+    padding-top: 25px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
   }
 
   .nav {
@@ -186,39 +193,34 @@ profile-pic {
   }
 
   .bio {
-   font-size: 1.75em;
-}
+      font-size: 1.75em;
+  }
 
-.portfolio-container {
-  margin-bottom: 100%
-}
+  .portfolio-container {
+    margin-bottom: 100px;
+  }
 
-.project{
-  margin-right: 5%;
-}
+  .project:nth-child(even) {
+    margin-right: initial;
+  }
 
-.project:nth-child(even) {
-  margin-right: initial;
-}
+  .project.proj-1,
+  .project.proj-2,
+  .project.proj-4,
+  .project.proj-5 {
+    margin-right: 5%;
+  }
 
+  .project {
+    width: 30%;
+  }
 
-.project.proj-1
-.project.proj-2
-.project.proj-4
-.project.proj-5{
-  margin-right: 5%;
-}
+  .project img {
+    max-width: 100%;
+  }
 
-.project {
-  width: 30%;
-}
-
-.project img {
-max-width: 100%
-}
-
-.contact-container {
-  max-width: 50%;
-  margin-top: 5%;
-}
+  .contact-container {
+    max-width: 50%;
+    margin-top: 10%;
+  }
 }
